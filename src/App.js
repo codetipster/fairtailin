@@ -1,12 +1,12 @@
-import Navbar from './components/Navbar';
+// import Navbar from './components/Navbar';
 import { BrowserRouter as Router } from 'react-router-dom';
-import SideBarMobileView from './components/SideBarMobileView';
+// import SideBarMobileView from './components/SideBarMobileView';
+import Home from './pages';
 function App() {
   return (
     <div className="container">
       <Router>
-        <SideBarMobileView />
-        <Navbar />
+        <Home />
       </Router>
     </div>
   );
