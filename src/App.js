@@ -1,7 +1,11 @@
+import Navbar from './components/Navbar';
+import { BrowserRouter as Router } from 'react-router-dom';
 function App() {
   return (
     <div className="container">
-      <h1>Hello React! Fairtailen is here.</h1>
+      <Router>
+        <Navbar />
+      </Router>
     </div>
   );
 }
