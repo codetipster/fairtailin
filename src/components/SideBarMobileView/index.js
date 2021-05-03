@@ -10,10 +10,10 @@ import {
   SideBarMenu,
 } from '../SideBarMobileView/SideBarElements';
 
-const SideBarMobileView = () => {
+const SideBarMobileView = ({ isOpen, toggle }) => {
   return (
-    <SideBarContainer>
-      <Icon>
+    <SideBarContainer isOpen={isOpen} onClick={toggle}>
+      <Icon onClick={toggle}>
         <CloseIcon />
       </Icon>
       <SideBarWrapper>
